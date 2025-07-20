@@ -1,9 +1,4 @@
-// Place your key bindings in this file to override the defaults
 [
-  // --------------------------------------------------
-  // NERD Tree風
-  // --------------------------------------------------
-  // サイドバーの表示トグル(サイドバーの表示・非表示)
   {
     "key": "ctrl+d",
     "command": "workbench.view.explorer",
@@ -14,7 +9,6 @@
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
   },
-  // サイドバーフォーカストグル(サイドバーは表示したまま，フォーカスを切り替え)
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusSideBar",
@@ -25,7 +19,6 @@
     "command": "workbench.action.focusFirstEditorGroup",
     "when": "!editorFocus"
   },
-  // ファイルの時は"Enter" or "o"で同一タブで表示
   {
     "key": "Enter",
     "command": "list.select",
@@ -36,57 +29,46 @@
     "command": "list.select",
     "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
   },
-  //
-  // フォルダのときは"Enter" or "o"で展開
   {
     "key": "Enter",
     "command": "list.toggleExpand",
     "when": "explorerViewletFocus && explorerViewletVisible && explorerResourceIsFolder && !inputFocus"
   },
-  // "s"で別ウィンドウで開く
   {
     "key": "s",
     "command": "explorer.openToSide",
     "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus"
   },
-  // --- ファイルシステム系 ---
-  // "m + r"でリネーム
   {
     "key": "m r",
     "command": "renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
-  // "m + c"でコピー
   {
     "key": "m c",
     "command": "filesExplorer.copy",
     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
-  // "m + p"でペースト
   {
     "key": "m p",
     "command": "filesExplorer.paste",
     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
-  // "m + a"でファイル追加
   {
     "key": "m a",
     "command": "explorer.newFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
-  // "m + d"で削除
   {
     "key": "m d",
     "command": "deleteFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
-  // "m + f"でフォルダ追加
   {
     "key": "m f",
     "command": "explorer.newFolder",
     "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
-  // Move aroud split windows
   {
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft"
